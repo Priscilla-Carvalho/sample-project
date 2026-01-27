@@ -1,0 +1,267 @@
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header {
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 105px;
+  height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__link:hover {
+  color: #1f69c9;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.header__text {
+  max-width: 635px;
+}
+
+.header__title {
+  max-width: 635px;
+  font-size: 62px;
+  line-height: 76px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.header__description {
+  max-width: 515px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 32px 0 0;
+}
+
+.header__image {
+  max-width: 636px;
+}
+
+.header__footer {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #838383;
+}
+
+.header__address {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+
+.staff {
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background-color: #fff;
+  background-image: url("../images/staff_picks_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.staff__title {
+  text-align: center;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 500;
+  margin: 0 0 24px;
+  color: #fff;
+}
+
+.staff__subtitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0 0 68px;
+}
+
+.staff__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 760px;
+}
+
+.card {
+  width: 360px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 32px 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #000;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: #000;
+}
+
+.card__footer {
+  font-size: 14px;
+  line-height: 20px;
+  color: #838383;
+  margin: 0;
+  padding-top: 20px;
+  margin-top: auto;
+  left: 40px;
+  right: 40px;
+}
+
+@media (max-width: 800px) {
+  .page {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .header {
+    padding: 20px 20px 30px;
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+
+  .header__content {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .header__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .header__description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .header__footer {
+    position: relative;
+    bottom: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .staff__cards {
+    width: 100%;
+    max-width: 360px;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+  }
+
+  .staff__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .staff__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card__text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
