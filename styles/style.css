@@ -265,3 +265,34 @@
     line-height: 22px;
   }
 }
+
+.events {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 10%;
+  background-color: #f2f2f2;
+}
+
+.event-info h2 {
+  font-size: 24px; /* Ajuste o tamanho conforme o tamanho real da imagem */
+  font-weight: bold; /* Se estiver em negrito */
+  line-height: 1.2;
+}
+
+.event-info p {
+  font-size: 16px; /* Ajuste o tamanho do parágrafo */
+  line-height: 1.5;
+}
+
+.event-info a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  position: relative;
+  top: 50lspx;
+}
+
+.event-image img {
+  max-width: 700px;
+}
