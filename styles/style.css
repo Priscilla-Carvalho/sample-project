@@ -269,30 +269,150 @@
 .events {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 80px 10%;
   background-color: #f2f2f2;
+  gap: 80px;
+}
+
+.event-info {
+  max-width: 520px;
+}
+
+.event-label {
+  font-size: 16px;
+  color: #090909;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 .event-info h2 {
-  font-size: 24px; /* Ajuste o tamanho conforme o tamanho real da imagem */
-  font-weight: bold; /* Se estiver em negrito */
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .event-info p {
-  font-size: 16px; /* Ajuste o tamanho do parágrafo */
-  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 0px;
+  color: #090909;
 }
 
 .event-info a {
+  display: inline-block;
+  margin-top: 30px;
   text-decoration: none;
   color: #007bff;
   font-weight: 600;
-  position: relative;
-  top: 50lspx;
 }
 
-.event-image img {
-  max-width: 700px;
+.event-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.icon-calendar {
+  width: 16px;
+  height: 16px;
+}
+
+.event-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.icon-pin {
+  width: 16px;
+  height: 16px;
+}
+
+.event-image {
+  position: relative;
+  width: 520px;
+}
+
+.imagem-base {
+  width: 100%;
+  display: block;
+}
+.pessoa {
+  position: absolute;
+  object-fit: cover;
+}
+
+.feynman {
+  top: 5px;
+  left: 210px;
+  width: 85px;
+  height: 85px;
+}
+.burbidge {
+  top: 90px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+}
+.cannon {
+  bottom: 35px;
+  right: 160px;
+  width: 60px;
+  height: 60px;
+}
+.mitchell {
+  top: 260px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+}
+.tarter {
+  bottom: 250px;
+  left: 115px;
+  width: 60px;
+  height: 60px;
+}
+
+.person-name {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.person-name.top.feynman {
+  top: -30px;
+  left: 210px;
+  width: 85px;
+}
+.person-name.top.burbidge {
+  top: 55px;
+  right: 110px;
+  width: 60px;
+}
+.person-name.top.tarter {
+  bottom: 260px;
+  left: 115px;
+  width: 60px;
+}
+
+.person-name.bottom.cannon {
+  bottom: -45px;
+  right: 175px;
+  width: 60px;
+}
+.person-name.bottom.mitchell {
+  top: 300px;
+  left: 90px;
+  width: 50px;
 }
